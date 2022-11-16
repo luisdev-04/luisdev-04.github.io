@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+:root {
+    --background: #0e0e0e;
+    --background-header: #0c0c0c;
+    --foreground: #ededed;
+    --accent: #0099ff;
+}
+
+/* DEFAULTS */
+html {
+    height: 100%;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Space Mono', monospace;
+    height: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/* HEADER */
+header {
+    background-color: var(--background-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1% 0 1%;
+}
+
+nav ul {
+    list-style-type: None;
+}
+
+nav ul li {
+    display: inline;
+    font-size: 1.25em;
+    padding-left: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+nav ul li b {
+    color: var(--accent);
+}
+
+#logo {
+    font-family: 'Play', sans-serif;
+    text-transform: uppercase;
+    color: var(--accent);
+    padding-left: 1%;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+header a:hover, #logo:hover {
+    transition: 200ms ease-in-out;
+    opacity: 70%;
+    color: var(--accent);
+}
+
+@media screen and (max-width: 505px) {
+    header nav ul li {
+        display: block;
+        padding: 0;
+    }
+}
+
+/* MAIN */
+.underconstruction {
+    padding-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
